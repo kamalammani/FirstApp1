@@ -1,0 +1,52 @@
+<!-- Done interpolation and binding -->
+
+<h2>{{name}}</h2>
+
+<label>First Name:</label><br/>
+<input type = "text" [(ngModel)]="enteredFirstName"><br/><br/>
+
+<label>Last  Name:</label><br/>
+<input type = "text" [(ngModel)]="enteredLastName"><br/><br/>
+
+<label>Email :</label><br/>
+<input type = "email" [(ngModel)]="enteredEmail"><br/><br/>
+
+<label>Contact Number :</label><br/>
+<input type = "tel" [(ngModel)]="enteredNumber"><br/><br/>
+
+<label>Address :</label><br/><br/>
+<textarea [(ngModel)]="enteredAddress"></textarea><br/><br/>
+
+<label>Username:</label><br/>
+<input type = "text" [(ngModel)]="enteredUserName"><br/><br/>	
+
+<label>Password:</label><br/>
+<input type = "password" [(ngModel)]="enteredPassword"><br/><br/>
+
+<label>Gender: </label><br/>
+<input type = "radio" name = "gender" value = "Male" [(ngModel)]="enteredGender">Male<br/>
+<input type = "radio" name = "gender" value = "Female"[(ngModel)]="enteredGender">Female<br/><br/>
+
+<label>Qualification: </label><br/>
+<select  [(ngModel)]="enteredQualification">
+    <option>B.E</option>
+    <option>B.Tech</option>
+    <option>Others</option>
+</select><br/><br>
+
+<label>Experience: </label><br/>
+<select [(ngModel)]="enteredExperience">
+    <option>0-2</option>
+    <option>2-5</option>
+    <option>5-10</option>
+</select><br/><br/>
+
+<label>Familiar Coding Language:</label><br/>
+<select [(ngModel)]="enteredLanguage">
+    <option>Java</option>
+    <option>C/C++</option>
+    <option>C#</option>
+</select><br/><br/>
+
+<button (click)="ngOnInit();printValue();">Submit</button>
+ 
